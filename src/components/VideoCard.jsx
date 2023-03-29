@@ -3,7 +3,6 @@ import {Typography, Card, CardContent, CardMedia} from "@mui/material"
 import {CheckCircle} from "@mui/icons-material"
 
 import {
-  demoThumbnailUrl,
   demoVideoUrl,
   demoVideoTitle,
   demoChannelUrl,
@@ -39,7 +38,7 @@ const VideoCard = ({
       </Link>
       <CardContent sx={{backgroundColor: "#1e1e1e", height: "106px"}}>
         <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
-          <Typography variant="subtitle1" fontWeight="bold" color="#FFF">
+          <Typography variant="subtitle1" fontWeight="bold" color="#F7F7F8">
             {snippet?.title.slice(0, 60) || demoVideoTitle.slice(0, 60)}
           </Typography>
         </Link>

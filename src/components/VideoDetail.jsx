@@ -37,18 +37,21 @@ const VideoDetail = () => {
               className="react-player"
               controls
             />
-            <Typography color="#fff" variant="h5" fontWeight="bold" p={2}>
+            <Typography color="#F7F7F8" variant="h5" fontWeight="bold" p={2}>
               {title}
             </Typography>
             <Stack
               direction="row"
               justifyContent="space-between"
               sx={{
-                color: "#fff",
+                color: "#F7F7F8",
               }}
             >
               <Link to={`/channel/${channelId}`}>
-                <Typography variant={{sm: "subtitle1", md: "h6"}} color="#fff">
+                <Typography
+                  variant={{sm: "subtitle1", md: "h6"}}
+                  color="#F7F7F8"
+                >
                   {channelTitle}
                   <CheckCircle
                     sx={{fontSize: "12px", color: "gray", ml: "5px"}}
