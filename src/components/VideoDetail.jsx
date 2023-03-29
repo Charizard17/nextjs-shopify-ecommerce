@@ -20,7 +20,7 @@ const VideoDetail = () => {
   }, [id])
   console.log(videoDetail)
 
-  if (!videoDetail?.snippet) return "Loading..."
+  if (!videoDetail?.snippet) return <span color="white">Loading...</span>
 
   const {
     snippet: {title, channelId, channelTitle},
